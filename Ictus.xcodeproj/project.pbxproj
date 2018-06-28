@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09A1F27620DC24CB0095CEC5 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A1F27520DC24CB0095CEC5 /* NFCReader.swift */; };
 		9E18D33920D855D2008B6BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18D33820D855D2008B6BC5 /* AppDelegate.swift */; };
 		9E18D33B20D855D2008B6BC5 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18D33A20D855D2008B6BC5 /* RootViewController.swift */; };
 		9E18D33D20D855D2008B6BC5 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18D33C20D855D2008B6BC5 /* DataViewController.swift */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09A1F27420DC243C0095CEC5 /* Ictus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ictus.entitlements; sourceTree = "<group>"; };
+		09A1F27520DC24CB0095CEC5 /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
 		9E18D33520D855D2008B6BC5 /* Ictus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ictus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E18D33820D855D2008B6BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E18D33A20D855D2008B6BC5 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -101,10 +104,13 @@
 		9E18D33720D855D2008B6BC5 /* Ictus */ = {
 			isa = PBXGroup;
 			children = (
+				09A1F27420DC243C0095CEC5 /* Ictus.entitlements */,
 				9E18D33820D855D2008B6BC5 /* AppDelegate.swift */,
 				9E18D33A20D855D2008B6BC5 /* RootViewController.swift */,
 				9E18D33C20D855D2008B6BC5 /* DataViewController.swift */,
 				9E18D33E20D855D2008B6BC5 /* ModelController.swift */,
+				09A1F27520DC24CB0095CEC5 /* NFCReader.swift */,
+				9E18D36B20D9A496008B6BC5 /* Icons */,
 				9E18D34020D855D2008B6BC5 /* Main.storyboard */,
 				9E18D34320D855D3008B6BC5 /* Assets.xcassets */,
 				9E18D34520D855D3008B6BC5 /* LaunchScreen.storyboard */,
@@ -129,6 +135,13 @@
 				9E18D35E20D855D3008B6BC5 /* Info.plist */,
 			);
 			path = IctusUITests;
+			sourceTree = "<group>";
+		};
+		9E18D36B20D9A496008B6BC5 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +212,14 @@
 				TargetAttributes = {
 					9E18D33420D855D2008B6BC5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
 					};
 					9E18D34C20D855D3008B6BC5 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -265,6 +286,7 @@
 				9E18D33B20D855D2008B6BC5 /* RootViewController.swift in Sources */,
 				9E18D33F20D855D2008B6BC5 /* ModelController.swift in Sources */,
 				9E18D33D20D855D2008B6BC5 /* DataViewController.swift in Sources */,
+				09A1F27620DC24CB0095CEC5 /* NFCReader.swift in Sources */,
 				9E18D33920D855D2008B6BC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +460,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ictus/Ictus.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23PAF39FG5;
 				INFOPLIST_FILE = Ictus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,6 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.usheron.Ictus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,7 +481,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ictus/Ictus.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23PAF39FG5;
 				INFOPLIST_FILE = Ictus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,6 +492,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.usheron.Ictus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

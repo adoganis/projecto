@@ -56,7 +56,12 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
     var _modelController: ModelController? = nil
 
     // MARK: - UIPageViewController delegate methods
+    
+    let nfcReader = NFCReader()  // this is where the nfc stuff starts
 
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        nfcReader.beginSession()
+    }
     func pageViewController(_ pageViewController: UIPageViewController, spineLocationFor orientation: UIInterfaceOrientation) -> UIPageViewControllerSpineLocation {
         if (orientation == .portrait) || (orientation == .portraitUpsideDown) || (UIDevice.current.userInterfaceIdiom == .phone) {
             // In portrait orientation or on iPhone: Set the spine position to "min" and the page view controller's view controllers array to contain just one view controller. Setting the spine position to 'UIPageViewControllerSpineLocationMid' in landscape orientation sets the doubleSided property to true, so set it to false here.
@@ -73,6 +78,8 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         var viewControllers: [UIViewController]
 
         let indexOfCurrentViewController = self.modelController.indexOfViewController(currentViewController)
+        
+        
         if (indexOfCurrentViewController == 0) || (indexOfCurrentViewController % 2 == 0) {
             let nextViewController = self.modelController.pageViewController(self.pageViewController!, viewControllerAfter: currentViewController)
             viewControllers = [currentViewController, nextViewController!]
