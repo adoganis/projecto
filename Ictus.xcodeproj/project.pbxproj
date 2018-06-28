@@ -16,9 +16,6 @@
 		9E18D34720D855D3008B6BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E18D34520D855D3008B6BC5 /* LaunchScreen.storyboard */; };
 		9E18D35220D855D3008B6BC5 /* IctusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18D35120D855D3008B6BC5 /* IctusTests.swift */; };
 		9E18D35D20D855D3008B6BC5 /* IctusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E18D35C20D855D3008B6BC5 /* IctusUITests.swift */; };
-		9E18D36F20D9A6A4008B6BC5 /* settingsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E18D36C20D9A6A4008B6BC5 /* settingsIcon.png */; };
-		9E18D37020D9A6A4008B6BC5 /* settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E18D36D20D9A6A4008B6BC5 /* settingsIcon@2x.png */; };
-		9E18D37120D9A6A4008B6BC5 /* settingsIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E18D36E20D9A6A4008B6BC5 /* settingsIcon@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +51,6 @@
 		9E18D35820D855D3008B6BC5 /* IctusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IctusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E18D35C20D855D3008B6BC5 /* IctusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IctusUITests.swift; sourceTree = "<group>"; };
 		9E18D35E20D855D3008B6BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E18D36C20D9A6A4008B6BC5 /* settingsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settingsIcon.png; path = ../../../Downloads/settingsIcon.png; sourceTree = "<group>"; };
-		9E18D36D20D9A6A4008B6BC5 /* settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@2x.png"; path = "../../../Downloads/settingsIcon@2x.png"; sourceTree = "<group>"; };
-		9E18D36E20D9A6A4008B6BC5 /* settingsIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settingsIcon@3x.png"; path = "../../../Downloads/settingsIcon@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +105,6 @@
 				9E18D33A20D855D2008B6BC5 /* RootViewController.swift */,
 				9E18D33C20D855D2008B6BC5 /* DataViewController.swift */,
 				9E18D33E20D855D2008B6BC5 /* ModelController.swift */,
-				9E18D36C20D9A6A4008B6BC5 /* settingsIcon.png */,
-				9E18D36D20D9A6A4008B6BC5 /* settingsIcon@2x.png */,
-				9E18D36E20D9A6A4008B6BC5 /* settingsIcon@3x.png */,
-				9E18D36B20D9A496008B6BC5 /* Icons */,
 				9E18D34020D855D2008B6BC5 /* Main.storyboard */,
 				9E18D34320D855D3008B6BC5 /* Assets.xcassets */,
 				9E18D34520D855D3008B6BC5 /* LaunchScreen.storyboard */,
@@ -139,13 +129,6 @@
 				9E18D35E20D855D3008B6BC5 /* Info.plist */,
 			);
 			path = IctusUITests;
-			sourceTree = "<group>";
-		};
-		9E18D36B20D9A496008B6BC5 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,11 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E18D34720D855D3008B6BC5 /* LaunchScreen.storyboard in Resources */,
-				9E18D37120D9A6A4008B6BC5 /* settingsIcon@3x.png in Resources */,
-				9E18D36F20D9A6A4008B6BC5 /* settingsIcon.png in Resources */,
 				9E18D34420D855D3008B6BC5 /* Assets.xcassets in Resources */,
 				9E18D34220D855D2008B6BC5 /* Main.storyboard in Resources */,
-				9E18D37020D9A6A4008B6BC5 /* settingsIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +439,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C784W9347H;
 				INFOPLIST_FILE = Ictus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,7 +456,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C784W9347H;
 				INFOPLIST_FILE = Ictus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
