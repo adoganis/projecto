@@ -2,7 +2,7 @@
 //  NFCReader.swift
 //  Ictus
 //
-//  Created by Amar on 6/21/18.
+//  Created by Rishabh on 6/21/18.
 //  Copyright © 2018 Alexandros Doganis. All rights reserved.
 // leave this file alone for now. it doesnt do anything just as yet.. 
 
