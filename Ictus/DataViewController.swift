@@ -13,7 +13,7 @@ class DataViewController: UIViewController, NFCNDEFReaderSessionDelegate {
 
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var dataLabel: UILabel!
-    var dataObject: String = ""
+    var dataObject: String = "hello hello: placeholder for linkedin link"
     var nfcSession: NFCNDEFReaderSession?
 
     
