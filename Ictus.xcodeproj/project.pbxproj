@@ -463,7 +463,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ictus/Ictus.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 23PAF39FG5;
+				DEVELOPMENT_TEAM = C784W9347H;
 				INFOPLIST_FILE = Ictus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,7 +484,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ictus/Ictus.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 23PAF39FG5;
+				DEVELOPMENT_TEAM = C784W9347H;
 				INFOPLIST_FILE = Ictus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
