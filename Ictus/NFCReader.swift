@@ -6,29 +6,40 @@
 //  Copyright © 2018 Alexandros Doganis. All rights reserved.
 // leave this file alone for now. it doesnt do anything just as yet.. 
 
-import Foundation
 import CoreNFC
 
-class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
-    func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
-        for message in messages {
-            for record in message.records {
-                print("New Record Found:")
-                print(record.identifier)
-                print(record.payload)
-                print(record.type)
-                print(record.typeNameFormat)
-            }
+protocol NFCScannerProtocol: class {
+    var scannerSession: NFCReaderSession? { get set }
+    func startSession()
+}
+
+class NFCScanner: NSObject, NFCScannerProtocol {
+    var scannerSession: NFCReaderSession?
+    
+    func startSession() {
+        if let session = scannerSession {
+            session.invalidate()
+            scannerSession = nil
+        }
+        scannerSession = NFCNDEFReaderSession(delegate: self,
+                                              queue:nil,
+                                              invalidateAfterFirstRead:false)
+        scannerSession?.begin()
+    }
+    
+}
+
+extension NFCScanner: NFCNDEFReaderSessionDelegate {
+    
+    func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
+        print("reader session invalidate with error: \(error.localizedDescription)")
+        if session == scannerSession {
+            scannerSession = nil
         }
     }
     
-    func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
-        print("NFC NDEF Invalidated")
-        print("\(error)")
+    func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
+        print("reader session did detect NDEFs messages: \(messages)")
     }
-    func beginSession() {
-        let session = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: false)
-        session.begin()
-    }
+    
 }
-
