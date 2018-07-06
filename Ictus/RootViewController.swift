@@ -57,10 +57,10 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
     // MARK: - UIPageViewController delegate methods
     
-    let nfcReader = NFCReader()  // this is where the nfc stuff starts
+    let nfcReader = NFCScanner()  // this is where the nfc stuff starts
 
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        nfcReader.beginSession()
+        nfcReader.startSession()
     }
     func pageViewController(_ pageViewController: UIPageViewController, spineLocationFor orientation: UIInterfaceOrientation) -> UIPageViewControllerSpineLocation {
         if (orientation == .portrait) || (orientation == .portraitUpsideDown) || (UIDevice.current.userInterfaceIdiom == .phone) {
