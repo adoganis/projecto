@@ -105,7 +105,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xra-1I-qYg"/>
                     </scrollView>
-                    <tabBarItem key="tabBarItem" badgeValue="Settings!" systemItem="more" id="S9J-M1-osr"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settingsIcon" landscapeImage="settingsIcon" largeContentSizeImage="settingsIcon" selectedImage="settingsIcon" id="S9J-M1-osr"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -134,4 +134,7 @@
             <point key="canvasLocation" x="-1011" y="158"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settingsIcon" width="25" height="25"/>
+    </resources>
 </document>
