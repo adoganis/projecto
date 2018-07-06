@@ -110,7 +110,6 @@
 				9E18D33C20D855D2008B6BC5 /* DataViewController.swift */,
 				9E18D33E20D855D2008B6BC5 /* ModelController.swift */,
 				09A1F27520DC24CB0095CEC5 /* NFCReader.swift */,
-				9E18D36B20D9A496008B6BC5 /* Icons */,
 				9E18D34020D855D2008B6BC5 /* Main.storyboard */,
 				9E18D34320D855D3008B6BC5 /* Assets.xcassets */,
 				9E18D34520D855D3008B6BC5 /* LaunchScreen.storyboard */,
@@ -135,13 +134,6 @@
 				9E18D35E20D855D3008B6BC5 /* Info.plist */,
 			);
 			path = IctusUITests;
-			sourceTree = "<group>";
-		};
-		9E18D36B20D9A496008B6BC5 /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,7 +458,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ictus/Ictus.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 23PAF39FG5;
+				DEVELOPMENT_TEAM = C784W9347H;
 				INFOPLIST_FILE = Ictus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,7 +479,7 @@
 				CODE_SIGN_ENTITLEMENTS = Ictus/Ictus.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 23PAF39FG5;
+				DEVELOPMENT_TEAM = C784W9347H;
 				INFOPLIST_FILE = Ictus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
