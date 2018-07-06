@@ -457,16 +457,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Ictus/Ictus.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C784W9347H;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 23PAF39FG5;
 				INFOPLIST_FILE = Ictus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.usheron.Ictus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PaireTech.Paire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "d94945bf-9304-45be-87a3-2e70c0428b3e";
+				PROVISIONING_PROFILE_SPECIFIER = paire2;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -478,16 +479,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Ictus/Ictus.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C784W9347H;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 23PAF39FG5;
 				INFOPLIST_FILE = Ictus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.usheron.Ictus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PaireTech.Paire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "d94945bf-9304-45be-87a3-2e70c0428b3e";
+				PROVISIONING_PROFILE_SPECIFIER = paire2;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

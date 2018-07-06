@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>NFCReaderUsageDescription</key>
-	<string>begin the transfer dawg</string>
+	<string>link!</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Paire </string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
