@@ -13,7 +13,7 @@ class DataViewController: UIViewController, NFCNDEFReaderSessionDelegate {
 
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var dataLabel: UILabel!
-    var dataObject: String = "hello hello: placeholder for linkedin link"
+    var dataObject: String = "hello: placeholder for linkedin link"
     var nfcSession: NFCNDEFReaderSession?
 
     
@@ -43,7 +43,7 @@ class DataViewController: UIViewController, NFCNDEFReaderSessionDelegate {
     
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
         // Parse the card's information
-        var result = "linked in link from settings."
+        var result = "linkedin link from settings."
         for payload in messages[0].records {
             result += String.init(data: payload.payload.advanced(by: 3), encoding: .utf8)! // 1
         }
